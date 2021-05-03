@@ -11,7 +11,7 @@ const useGetDocumentTitlePrice = () => {
     Number.isNaN(vgdPriceUsd) || vgdPriceUsd === 0
       ? ''
       : ` - $${vgdPriceUsd.toLocaleString(undefined, {
-          minimumFractionDigits: 3,
+          minimumFractionDigits: 4,
           maximumFractionDigits: 3,
         })}`
 
