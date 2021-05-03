@@ -2,7 +2,7 @@ import { ChainId, Pair, Token } from '@pancakeswap-libs/sdk'
 import flatMap from 'lodash.flatmap'
 import { useCallback, useMemo } from 'react'
 import { shallowEqual, useDispatch, useSelector } from 'react-redux'
-import { BASES_TO_TRACK_LIQUIDITY_FOR, PINNED_PAIRS } from '../../constants'
+import { BASES_TO_TRACK_LIQUIDITY_FOR, INIT_CODE, PINNED_PAIRS, FACTORY_ADDRESS } from '../../constants'
 
 import { useActiveWeb3React } from '../../hooks'
 // eslint-disable-next-line import/no-cycle
@@ -192,7 +192,7 @@ export function usePairAdder(): (pair: Pair) => void {
  * @param tokenB the other token
  */
 export function toV2LiquidityToken([tokenA, tokenB]: [Token, Token]): Token {
-  return new Token(tokenA.chainId, Pair.getAddress(tokenA, tokenB), 18, 'VGD-LP', 'VGD LPs')
+  return new Token(tokenA.chainId, Pair.getAddress(tokenA, tokenB, FACTORY_ADDRESS, INIT_CODE), 18, 'VGD-LP', 'VGD LPs')
 }
 
 /**
