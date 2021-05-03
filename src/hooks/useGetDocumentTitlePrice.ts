@@ -1,6 +1,6 @@
 import { useEffect } from 'react'
 import useGetPriceData from './useGetPriceData'
-import { CAKE } from '../constants'
+import { VGD } from '../constants'
 
 const useGetDocumentTitlePrice = () => {
   const priceData = useGetPriceData()
