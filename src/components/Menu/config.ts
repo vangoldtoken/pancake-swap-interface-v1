@@ -14,11 +14,11 @@ const config: MenuEntry[] = [
     items: [
       {
         label: 'Exchange',
-        href: '${BASE_APP_URL}/swap',
+        href: '/swap',
       },
       {
         label: 'Liquidity',
-        href: '${BASE_APP_URL}/pool',
+        href: '/pool',
       },
       {
         label: 'V1 Liquidity (Old)',
