@@ -191,7 +191,7 @@ export function usePairAdder(): (pair: Pair) => void {
  * @param tokenA one of the two tokens
  * @param tokenB the other token
  */
-export function toV1LiquidityToken([tokenA, tokenB]: [Token, Token]): Token {
+export function toV2LiquidityToken([tokenA, tokenB]: [Token, Token]): Token {
   return new Token(tokenA.chainId, Pair.getAddress(tokenA, tokenB, FACTORY_ADDRESS, INIT_CODE), 18, 'VGD-LP', 'VGD LPs')
 }
 
