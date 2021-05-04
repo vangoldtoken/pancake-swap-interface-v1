@@ -53,7 +53,7 @@ export default function Pool() {
     fetchingV2PairBalances || v2Pairs?.length < liquidityTokensWithBalances.length || v2Pairs?.some((V2Pair) => !V2Pair)
 
   const allV2PairsWithLiquidity = v2Pairs.map(([, pair]) => pair).filter((v2Pair): v2Pair is Pair => Boolean(v2Pair))
-
+  const hasV1Liquidity = false // useUserHasLiquidityInAllTokens()
   return (
     <Container>
       <CardNav activeIndex={1} />
@@ -107,9 +107,11 @@ export default function Pool() {
 
               <div>
                 <Text fontSize="14px" style={{ padding: '.5rem 0 .5rem 0' }}>
-                  {TranslateString(106, "Don't see a pool you joined?")}{' '}
-                  <StyledInternalLink id="import-pool-link" to="/find">
-                    {TranslateString(108, 'Import it.')}
+                  {hasV1Liquidity
+                    ? 'Uniswap V1 liquidity found!'
+                    :TranslateString(106, "Don't see a pool you joined?")}{' '}
+                  <StyledInternalLink id="import-pool-link" to={hasV1Liquidity ? '/migrate/v1' : '/find'}>
+                    {hasV1Liquidity ? 'Migrate now.' : TranslateString(108, 'Import it.')}
                   </StyledInternalLink>
                 </Text>
                 <Text fontSize="14px" style={{ padding: '.5rem 0 .5rem 0' }}>
