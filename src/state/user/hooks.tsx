@@ -2,7 +2,7 @@ import { ChainId, Pair, Token } from '@pancakeswap-libs/sdk'
 import flatMap from 'lodash.flatmap'
 import { useCallback, useMemo } from 'react'
 import { shallowEqual, useDispatch, useSelector } from 'react-redux'
-import { BASES_TO_TRACK_LIQUIDITY_FOR, INIT_CODE, PINNED_PAIRS, FACTORY_ADDRESS } from '../../constants'
+import { BASES_TO_TRACK_LIQUIDITY_FOR, INIT_CODE, PINNED_PAIRS, FACTORY_ADDRESS} from '../../constants'
 
 import { useActiveWeb3React } from '../../hooks'
 // eslint-disable-next-line import/no-cycle
