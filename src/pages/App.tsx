@@ -9,9 +9,15 @@ import Web3ReactManager from '../components/Web3ReactManager'
 import { RedirectDuplicateTokenIds, RedirectOldAddLiquidityPathStructure } from './AddLiquidity/redirects'
 import { RedirectOldRemoveLiquidityPathStructure } from './RemoveLiquidity/redirects'
 import AddLiquidity from './AddLiquidity'
+import {
+  RedirectDuplicateTokenIds,
+  RedirectOldAddLiquidityPathStructure,
+  RedirectToAddLiquidity
+} from './AddLiquidity/redirects'
 import Pool from './Pool'
 import PoolFinder from './PoolFinder'
 import RemoveLiquidity from './RemoveLiquidity'
+import { RedirectOldRemoveLiquidityPathStructure } from './RemoveLiquidity/redirects'
 import Swap from './Swap'
 import Migration from './Migration'
 import { RedirectPathToSwapOnly } from './Swap/redirects'
