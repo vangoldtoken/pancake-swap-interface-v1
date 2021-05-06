@@ -14,6 +14,7 @@ import {
   RedirectOldAddLiquidityPathStructure,
   RedirectToAddLiquidity
 } from './AddLiquidity/redirects'
+import RemoveV1Exchange from './MigrateV1/RemoveV1Exchange'
 import Pool from './Pool'
 import PoolFinder from './PoolFinder'
 import RemoveLiquidity from './RemoveLiquidity'
