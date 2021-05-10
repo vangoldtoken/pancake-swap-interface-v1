@@ -12,8 +12,7 @@ import {
   
 } from './AddLiquidity/redirects'
 
-import Pool from './Pool'
-import PoolFinder from './PoolFinder'
+
 import RemoveLiquidity from './RemoveLiquidity'
 import { RedirectOldRemoveLiquidityPathStructure } from './RemoveLiquidity/redirects'
 import Swap from './Swap'
