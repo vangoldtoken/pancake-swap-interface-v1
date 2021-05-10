@@ -8,11 +8,13 @@ import Popups from '../components/Popups'
 import Web3ReactManager from '../components/Web3ReactManager'
 
 import AddLiquidity from './AddLiquidity'
-import {
-  
+import { RedirectDuplicateTokenIds,
+  RedirectOldAddLiquidityPathStructure,
+  RedirectToAddLiquidity
 } from './AddLiquidity/redirects'
 
-
+import Pool from './Pool'
+import PoolFinder from './PoolFinder'
 import RemoveLiquidity from './RemoveLiquidity'
 import { RedirectOldRemoveLiquidityPathStructure } from './RemoveLiquidity/redirects'
 import Swap from './Swap'
