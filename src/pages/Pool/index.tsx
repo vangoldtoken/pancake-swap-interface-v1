@@ -66,7 +66,7 @@ export default function Pool() {
             <TranslatedText translationId={100}>Add Liquidity</TranslatedText>
           </Button>
         </PageHeader>
-        <AutoColumn gap="100px" justify="center">
+        <AutoColumn gap="lg" justify="center">
           <CardBody>
             <AutoColumn gap="12px" style={{ width: '100%' }}>
               <RowBetween padding="0 8px">
